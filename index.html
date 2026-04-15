@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -13,14 +13,14 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:"Segoe UI",Arial,sans-serif;color:#2c2c2c;background:#f4f7fb}
 
-/* ── Topbar ── */
+/* â”€â”€ Topbar â”€â”€ */
 .topbar{background:var(--db);color:#fff;padding:0 28px;height:54px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.25)}
 .tl{display:flex;align-items:center;gap:12px}
 .tt{font-size:16px;font-weight:700;letter-spacing:.3px}
 .ts{font-size:11px;opacity:.7;margin-top:1px}
 .tb{background:var(--mb);color:#fff;font-size:10px;padding:3px 9px;border-radius:10px;font-weight:700}
 
-/* ── Layout ── */
+/* â”€â”€ Layout â”€â”€ */
 .layout{display:flex;min-height:calc(100vh - 54px)}
 .sidebar{width:252px;background:#fff;border-right:1px solid var(--bd);padding:16px 0;position:sticky;top:54px;height:calc(100vh - 54px);overflow-y:auto;flex-shrink:0}
 .sl{font-size:10px;font-weight:700;color:var(--gy);text-transform:uppercase;letter-spacing:1px;padding:10px 18px 4px}
@@ -33,7 +33,7 @@ body{font-family:"Segoe UI",Arial,sans-serif;color:#2c2c2c;background:#f4f7fb}
 .section{display:none;max-width:1080px;margin:0 auto}
 .section.active{display:block}
 
-/* ── Hero ── */
+/* â”€â”€ Hero â”€â”€ */
 .hero{background:linear-gradient(135deg,var(--db) 0%,var(--mb) 100%);color:#fff;border-radius:12px;padding:36px 36px 30px;margin-bottom:24px}
 .hero h1{font-size:26px;font-weight:700;margin-bottom:6px}
 .hero p{font-size:13px;opacity:.85;line-height:1.6;max-width:680px}
@@ -41,7 +41,7 @@ body{font-family:"Segoe UI",Arial,sans-serif;color:#2c2c2c;background:#f4f7fb}
 .hm{background:rgba(255,255,255,.15);border-radius:8px;padding:8px 14px;font-size:11px}
 .hm span{display:block;font-weight:700;font-size:15px;margin-top:2px}
 
-/* ── Cards ── */
+/* â”€â”€ Cards â”€â”€ */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-bottom:24px}
 .card{background:#fff;border-radius:10px;padding:18px;border:1px solid var(--bd);cursor:pointer;transition:all .2s}
 .card:hover{box-shadow:0 4px 16px rgba(45,26,94,.12);border-color:var(--mb);transform:translateY(-1px)}
@@ -53,70 +53,70 @@ body{font-family:"Segoe UI",Arial,sans-serif;color:#2c2c2c;background:#f4f7fb}
 .tuser{background:#D5F5E3;color:var(--gn)}
 .tall{background:#F5E6FF;color:var(--pu)}
 
-/* ── Section header ── */
+/* â”€â”€ Section header â”€â”€ */
 .ph{margin-bottom:20px}
 .ph h2{font-size:20px;font-weight:700;color:var(--db);margin-bottom:5px}
 .ph p{font-size:12px;color:var(--gy)}
 .divider{height:3px;background:linear-gradient(to right,var(--mb),var(--lb));border-radius:2px;margin-bottom:20px}
 
-/* ── Tables ── */
+/* â”€â”€ Tables â”€â”€ */
 .dt{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:16px}
 .dt th{background:var(--db);color:#fff;padding:9px 10px;text-align:left;font-weight:600;font-size:11px}
 .dt td{padding:8px 10px;border-bottom:1px solid var(--bd);vertical-align:top;line-height:1.4}
 .dt tr:nth-child(even) td{background:var(--vl)}
 .dt tr:hover td{background:#e3d0f744}
 
-/* ── Blocks ── */
+/* â”€â”€ Blocks â”€â”€ */
 .block{background:#fff;border-radius:10px;border:1px solid var(--bd);padding:18px 22px;margin-bottom:14px}
 .block h3{font-size:14px;font-weight:700;color:var(--db);margin-bottom:12px;display:flex;align-items:center;gap:7px}
 .block p{font-size:12px;color:var(--gy);line-height:1.6;margin-bottom:6px}
 
-/* ── Info grid ── */
+/* â”€â”€ Info grid â”€â”€ */
 .ig{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
 .ii{background:#fff;border:1px solid var(--bd);border-radius:8px;padding:11px 14px}
 .ii .lbl{font-size:10px;font-weight:700;color:var(--gy);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
 .ii .val{font-size:13px;color:var(--db);font-weight:600}
 
-/* ── Alerts ── */
+/* â”€â”€ Alerts â”€â”€ */
 .alert{border-radius:8px;padding:11px 14px;font-size:12px;margin-bottom:10px;display:flex;gap:9px;align-items:flex-start}
 .alert-icon{font-size:14px;flex-shrink:0;margin-top:1px}
 .ai{background:var(--vl);border-left:3px solid var(--mb);color:#2D1A5E}
 .at{background:#E9F7EF;border-left:3px solid var(--gn);color:#145A32}
 .aw{background:#FDEDEC;border-left:3px solid var(--or);color:#7B241C}
 
-/* ── Search bar ── */
+/* â”€â”€ Search bar â”€â”€ */
 .sbar{display:flex;gap:10px;margin-bottom:16px}
 .sbar input{flex:1;padding:9px 13px;border:1px solid var(--bd);border-radius:8px;font-size:12px;outline:none}
 .sbar input:focus{border-color:var(--mb);box-shadow:0 0 0 2px var(--lb)}
 
-/* ── Flow arrows ── */
+/* â”€â”€ Flow arrows â”€â”€ */
 .af{display:flex;align-items:center;gap:8px;margin:14px 0;flex-wrap:wrap}
 .an{background:var(--lb);border:2px solid var(--mb);border-radius:10px;padding:10px 14px;text-align:center;font-size:11px;font-weight:600;color:var(--db);flex:1;min-width:110px}
 .an small{display:block;font-weight:400;font-size:10px;margin-top:3px;opacity:.8}
 .aa{color:var(--mb);font-size:18px;font-weight:700;flex-shrink:0}
 
-/* ── Badge ── */
+/* â”€â”€ Badge â”€â”€ */
 .badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700}
 .b-blue{background:var(--lb);color:var(--db)}
 .b-green{background:#D5F5E3;color:var(--gn)}
 .b-amber{background:#FDEBD0;color:#784212}
 .b-grey{background:#EAECEE;color:#555}
 
-/* ── Model diagram ── */
+/* â”€â”€ Model diagram â”€â”€ */
 .diagram-wrap{background:#fff;border-radius:10px;border:1px solid var(--bd);padding:18px;margin-bottom:14px;text-align:center}
 .diagram-wrap img{max-width:100%;border-radius:8px}
 
-/* ── Dashboard iframe ── */
+/* â”€â”€ Dashboard iframe â”€â”€ */
 .dash-wrap{background:#fff;border-radius:10px;border:1px solid var(--bd);overflow:hidden;margin-bottom:14px}
-.dash-wrap iframe{width:100%;height:1100px;border:none;display:block}
+.dash-wrap iframe{width:100%;height:800px;border:none;display:block}
 
-/* ── Source tag ── */
+/* â”€â”€ Source tag â”€â”€ */
 .src-tag{font-size:10px;color:var(--gy);font-family:monospace;background:#f4f4f4;padding:1px 5px;border-radius:4px}
 </style>
 </head>
 <body>
 
-<!-- ── Topbar ── -->
+<!-- â”€â”€ Topbar â”€â”€ -->
 <div class="topbar">
   <div class="tl">
     <div>
@@ -129,7 +129,7 @@ body{font-family:"Segoe UI",Arial,sans-serif;color:#2c2c2c;background:#f4f7fb}
 
 <div class="layout">
 
-<!-- ── Sidebar ── -->
+<!-- â”€â”€ Sidebar â”€â”€ -->
 <nav class="sidebar">
   <div class="sl">Navigation</div>
   <div class="si active" onclick="show('home',this)"><span class="si-icon">&#8962;</span> Home</div>
@@ -140,7 +140,7 @@ body{font-family:"Segoe UI",Arial,sans-serif;color:#2c2c2c;background:#f4f7fb}
   <div class="si" onclick="show('dashboard',this)"><span class="si-icon">&#9782;</span> Patient Outcomes</div>
 </nav>
 
-<!-- ── Main ── -->
+<!-- â”€â”€ Main â”€â”€ -->
 <main class="main">
 
   <!-- HOME -->
